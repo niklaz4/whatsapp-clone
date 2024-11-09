@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Web</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0 chat-container">
+            
+            <div class="col-4 chat-list border-end">
+                <div class="chat-header d-flex justify-content-between align-items-center p-3 border-bottom">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar me-2">
+                            <img src="galeria\avatar1.png" alt="Meu Perfil" class="avatar-img">
+                        </div>
+                        <span>Meu Perfil</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="far fa-comment-alt me-3"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+
+                <!-- Banner de Notificações -->
+                <div class="notifications-banner d-flex align-items-center p-3">
+                    <div class="notifications-icon me-3">
+                        <i class="fas fa-bell-slash"></i>
+                    </div>
+                    <div class="notifications-text">
+                        <div>Receba notificações de novas mensagens</div>
+                        <a href="#" class="notifications-link">Ativar notificações na área de trabalho ›</a>
+                    </div>
+                </div>
+
+                <!-- Campo de busca -->
+                <div class="search-container p-2">
+                    <div class="input-group">
+                        <span class="input-group-text border-0 bg-white">
+                            <i class="fas fa-search text-muted"></i>
+                        </span>
+                        <input type="text" class="form-control border-0" placeholder="Procurar ou começar uma nova conversa">
+                    </div>
+                </div>
+
+                <div id="chatList">
+                    <!-- Lista de chats será preenchida via JavaScript -->
+                </div>
+            </div>
+
+            <div class="col-8 chat-messages">
+                <div class="chat-background"></div>
+                
+                <div class="chat-header d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar me-2">
+                            <img id="currentChatAvatar" src="galeria\avatar2.png" alt="" class="avatar-img">
+                        </div>
+                        <span id="currentChatName">Selecione uma conversa</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-search me-3"></i>
+                        <i class="fas fa-paperclip me-3"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+
+                <div class="message-area" id="messageArea">
+                    <!-- Mensagens serão preenchidas via JavaScript -->
+                </div>
+
+                <div class="message-input">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-0">
+                            <i class="far fa-smile"></i>
+                        </span>
+                        <input type="text" class="form-control border-0" id="messageInput" placeholder="Digite uma mensagem">
+                        <span class="input-group-text bg-white border-0">
+                            <i class="fas fa-microphone"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
